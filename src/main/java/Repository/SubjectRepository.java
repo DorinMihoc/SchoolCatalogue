@@ -1,6 +1,6 @@
 package Repository;
 
-public class TeacherRepository {
+public class SubjectRepository {
     public void add(){
 
     }
