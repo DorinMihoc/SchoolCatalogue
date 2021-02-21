@@ -1,12 +1,7 @@
-package Hibernate;
+package controller;
 
-import Repository.StudentRepository;
-import SchoolElements.Student;
-
-import javax.swing.*;
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import repository.StudentRepository;
+import model.Student;
 
 public class Main {
 
@@ -101,8 +96,16 @@ public class Main {
 
 
     public static void main(String[] args) {
+        StudentController studentController = new StudentController();
+        studentController.addStudent(new Student());
+
         StudentRepository studentRepository = new StudentRepository();
         studentRepository.add(new Student());
+        addStudent();
+    }
+
+    public static void addStudent(){
+        //---
     }
 
 

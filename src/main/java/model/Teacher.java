@@ -1,4 +1,4 @@
-package SchoolElements;
+package model;
 
 import javax.persistence.*;
 
