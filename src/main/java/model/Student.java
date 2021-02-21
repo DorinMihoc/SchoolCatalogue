@@ -1,4 +1,4 @@
-package SchoolElements;
+package model;
 
 import com.sun.xml.internal.ws.api.ha.StickyFeature;
 

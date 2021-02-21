@@ -1,4 +1,4 @@
-package Hibernate;
+package util;
 
 public class DatabeUtilitis {
     public static String DB_Host = "localhost";// machine ip or localhost if the database is locally installed

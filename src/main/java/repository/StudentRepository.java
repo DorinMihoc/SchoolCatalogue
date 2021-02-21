@@ -1,12 +1,9 @@
-package Repository;
+package repository;
 
-import Hibernate.HibernateUtils;
-import SchoolElements.Student;
+import util.HibernateUtils;
+import model.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
-
-import java.util.List;
 
 public class StudentRepository {
     public void add(Student student) {
