@@ -13,8 +13,8 @@ public class StudentService {
 
     public void add(Student student) {
         //if student age is invalid
-        //if sdtudent with name doesnt already exist in db - throw exception
-        //eelse
+        //if student with name doesn't already exist in db - throw exception
+        //else
         studentRepository.add(student);
     }
 }

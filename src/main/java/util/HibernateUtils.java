@@ -1,7 +1,6 @@
 package util;
 
-import model.Student;
-import model.Teacher;
+import model.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -10,7 +9,7 @@ import org.hibernate.service.ServiceRegistry;
 
 import java.util.Properties;
 
-import static util.DatabeUtilitis.*;
+import static util.DatabaseUtils.*;
 
 public class HibernateUtils {
 
@@ -36,8 +35,9 @@ public class HibernateUtils {
             // TODO Add classes for hibernate to know what
             configuration.addAnnotatedClass(Student.class);
             configuration.addAnnotatedClass(Teacher.class);
-
-
+            configuration.addAnnotatedClass(Grade.class);
+            configuration.addAnnotatedClass(Subject.class);
+            configuration.addAnnotatedClass(ClassRoom.class);
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
 
